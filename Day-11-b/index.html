@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 4px solid red;
+        display: flex;
+        height: 600px;
+        align-items: flex-start;
+        align-items: center;
+        align-items: flex-end;
+        align-items: baseline;
+        align-items: stretch;
+        /* justify-content: center; */
+      }
+      .childContainer {
+        border: 4px solid blue;
+        /* height: 200px; */
+        /* width: 200px; */
+        font-size: 42px;
+        text-align: center;
+      }
+      .childContainer:nth-child(1) {
+        align-self: center;
+        flex-grow: 2;
+      }
+      .childContainer:nth-child(2) {
+        align-self: flex-end;
+        flex-grow: 3;
+      }
+
+      .childContainer:nth-child(3) {
+        align-self: flex-start;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="childContainer">1</div>
+      <div class="childContainer">2</div>
+      <div class="childContainer">3</div>
+    </div>
+  </body>
+</html>

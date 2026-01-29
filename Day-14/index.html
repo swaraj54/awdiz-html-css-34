@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .child {
+        border: 2px solid purple;
+        height: 200px;
+        width: 19%;
+        /* 19% total 95 5% spacing */
+        /* 32% total 96 4% spacing */
+        text-align: center;
+        font-size: 32px;
+      }
+      /* 550 - 2 750 - 3 1050 - 4 */
+      @media (min-width: 300px) and (max-width: 551px) {
+        .container {
+          border: 5px solid yellow;
+        }
+
+        .child {
+          border: 2px solid blue;
+          width: 45%;
+        }
+        .container div:nth-child(3) {
+          display: none;
+          /* visibility: hidden; */
+        }
+      }
+      @media (min-width: 551px) and (max-width: 751px) {
+        .child {
+          width: 32%;
+          border: 2px solid green;
+        }
+      }
+      @media (min-width: 751px) and (max-width: 1050px) {
+        .container {
+          flex-direction: column;
+        }
+        .child {
+          width: 90%;
+          margin: auto;
+          border: 2px solid red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <!-- <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Quicksand", sans-serif;
+      }
+      #screenCnt {
+        height: 100vh;
+        width: 100vw;
+        /* border: 2px solid red; */
+      }
+      #topNavbarCnt {
+        height: 40px;
+        width: 100%;
+        background-color: #8109ad;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #topNavbarCnt p {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      #bodyCnt {
+        width: 84%;
+        margin: auto;
+        /* border: 5px solid blue; */
+        height: calc(100vh - 40px);
+      }
+      #navbarCnt {
+        height: 70px;
+        /* border: 5px solid green; */
+        display: flex;
+        justify-content: space-around;
+      }
+      #logoCnt {
+        width: 10%;
+        /* border: 2px solid red; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #logoCnt p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #navCnt {
+        width: 68%;
+        /* border: 2px solid red; */
+        height: 100%;
+      }
+      #navCnt div {
+        /* border: 2px solid orange; */
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 60%;
+        justify-content: space-between;
+      }
+      #navCnt div p {
+        font-weight: bold;
+        color: #526173;
+      }
+      #proCnt {
+        width: 12%;
+        /* border: 2px solid red; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #proCnt div:nth-child(1) p {
+        color: rgb(95, 95, 95);
+      }
+      #proCnt div:nth-child(2) {
+        background-color: #007589;
+        padding: 8px 10px;
+        border-radius: 5px;
+      }
+
+      #proCnt div:nth-child(2) p {
+        font-size: 12px;
+        color: white;
+      }
+      #proCnt div:last-child {
+        display: none;
+      }
+
+      #contentCnt {
+        /* border: 2px solid black; */
+        height: calc(100vh - 300px);
+        border-radius: 20px;
+        background: linear-gradient(
+          to bottom,
+          rgba(129, 9, 173, 0.8),
+          rgba(0, 117, 137, 0.8)
+        );
+        width: 100%;
+      }
+      #conentimgCnt {
+        /* border: 2px solid white; */
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 20px;
+      }
+      #conentimgCnt img {
+        height: 30px;
+        width: 220px;
+        margin: 0px 40px;
+        border-radius: 6px;
+        /* border: 2px solid black; */
+      }
+
+      @media (max-width: 1000px) {
+        #navCnt {
+          display: none;
+        }
+        #navbarCnt {
+          justify-content: space-between;
+        }
+        #proCnt div:nth-child(1) {
+          display: none;
+        }
+        #proCnt div:nth-child(3) {
+          padding: 6px;
+          display: block;
+        }
+        #logoCnt {
+          width: 36%;
+          /* border: 2px solid blue; */
+          justify-content: flex-start;
+        }
+        #proCnt {
+          width: 36%;
+          justify-content: flex-end;
+          /* border: 2px solid blue; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screenCnt">
+      <div id="topNavbarCnt">
+        <p>
+          💥 2026 New Year's Sale 💥 Take 50% off your first 6 months! (new
+          subscribers only, renews at regular price).
+        </p>
+      </div>
+      <div id="bodyCnt">
+        <div id="navbarCnt">
+          <div id="logoCnt">
+            <p>treehouse</p>
+          </div>
+          <div id="navCnt">
+            <div>
+              <p>Plans</p>
+              <p>Library</p>
+              <p>Techdegree</p>
+              <p>Community</p>
+              <p>Resources</p>
+            </div>
+          </div>
+          <div id="proCnt">
+            <div>
+              <p>Sign In</p>
+            </div>
+            <div>
+              <p>Free Trial</p>
+            </div>
+            <div>
+              <img src="../Day-15/menu_icon.svg" />
+            </div>
+          </div>
+        </div>
+        <div id="contentCnt">
+          <div id="conentimgCnt">
+            <img
+              src="https://ecs-static.teamtreehouse.com/assets/views/marketing/for-military/editors_choice_rating-ad06494d56dd515bddaccd8824cad187db2412aa5172db53c09382b77ff62230.webp"
+            />
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="companyCnt"></div>
+      </div>
+    </div>
+  </body>
+</html>

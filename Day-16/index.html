@@ -129,6 +129,61 @@
         border-radius: 6px;
         /* border: 2px solid black; */
       }
+      #conentTitleCnt {
+        height: 200px;
+        width: 74%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      #conentTitleCnt h1 {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #conentTitleCnt p {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #conentTitleCnt p:last-child {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
+      #contentSearchCnt {
+        /* border: 2px solid white; */
+        display: flex;
+        justify-content: center;
+      }
+      #contentSearchCnt input {
+        height: 50px;
+        width: 300px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 16px;
+      }
+
+      #contentSearchCnt button {
+        height: 50px;
+        width: 180px;
+        background-color: #8109ad;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        border-radius: 5px;
+      }
+
+      @media (min-width: 1000px) and (max-width: 1140px) {
+        #conentTitleCnt p {
+          font-size: 18px;
+        }
+      }
 
       @media (max-width: 1000px) {
         #navCnt {
@@ -153,6 +208,35 @@
           width: 36%;
           justify-content: flex-end;
           /* border: 2px solid blue; */
+        }
+        #conentTitleCnt h1 {
+          font-size: 40px;
+        }
+        #conentTitleCnt p {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 790px) {
+        #contentSearchCnt {
+          flex-direction: column;
+          /* border: 1px solid white; */
+        }
+        #conentTitleCnt h1 {
+          font-size: 30px;
+        }
+        #conentTitleCnt p {
+          font-size: 16px;
+        }
+        #contentSearchCnt input {
+          width: 220px;
+          margin: auto;
+          margin-bottom: 10px;
+        }
+
+        #contentSearchCnt button {
+          width: 120px;
+          margin: auto;
         }
       }
     </style>
@@ -197,8 +281,18 @@
               src="https://ecs-static.teamtreehouse.com/assets/views/marketing/for-military/editors_choice_rating-ad06494d56dd515bddaccd8824cad187db2412aa5172db53c09382b77ff62230.webp"
             />
           </div>
-          <div></div>
-          <div></div>
+          <div id="conentTitleCnt">
+            <h1>Behind Every Smart AI User Is a Smarter Human</h1>
+            <p>
+              Master the core languages: <b>JavaScript</b>, <b>HTML</b>,
+              <b>CSS</b>, and <b>Python</b>
+            </p>
+            <p>Try it free for 7 days, then $25 a month</p>
+          </div>
+          <div id="contentSearchCnt">
+            <input placeholder="free for 7 days, then $25 a month" />
+            <button>Join Awdiz</button>
+          </div>
         </div>
         <div id="companyCnt"></div>
       </div>

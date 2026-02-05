@@ -178,6 +178,20 @@
         color: white;
         border-radius: 5px;
       }
+      #sidebar {
+        /* display: none; */
+        background: linear-gradient(
+          to right,
+          rgba(86, 0, 117, 0.8),
+          rgba(1, 74, 87, 0.8)
+        );
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        color: white;
+      }
 
       @media (min-width: 1000px) and (max-width: 1140px) {
         #conentTitleCnt p {
@@ -243,6 +257,14 @@
   </head>
   <body>
     <div id="screenCnt">
+      <div id="sidebar">
+        <button onclick="closeMenu()">Close</button>
+        <p>Plans</p>
+        <p>Library</p>
+        <p>Techdegree</p>
+        <p>Community</p>
+        <p>Resources</p>
+      </div>
       <div id="topNavbarCnt">
         <p>
           💥 2026 New Year's Sale 💥 Take 50% off your first 6 months! (new
@@ -270,7 +292,7 @@
             <div>
               <p>Free Trial</p>
             </div>
-            <div>
+            <div onclick="openMenu()">
               <img src="../Day-15/menu_icon.svg" />
             </div>
           </div>
@@ -298,4 +320,17 @@
       </div>
     </div>
   </body>
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    console.log(sidebar, "sidebar");
+    function openMenu() {
+      // sidebar.style.display = "block";
+      // sidebar.style.color = "red";
+      sidebar.style.left = "0px";
+    }
+    function closeMenu() {
+      // sidebar.style.display = "none";
+      sidebar.style.left = "-300px";
+    }
+  </script>
 </html>
